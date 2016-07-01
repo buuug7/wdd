@@ -1,0 +1,31 @@
+.search {
+	.site-content {
+		.site-main {
+			.page-header {
+				.page-title {
+					color: $primary-color;
+				}
+			}
+
+			.page-content {
+				.searchform {
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+
+	&.search-results {
+		.site-content {
+			.site-main {
+				.page-header {
+					@extend .card;
+
+					.page-title {
+						padding: 20px;
+					}
+				}
+			}
+		}
+	}
+}

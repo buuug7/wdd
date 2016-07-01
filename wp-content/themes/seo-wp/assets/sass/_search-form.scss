@@ -1,0 +1,36 @@
+#search-box {
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 0;
+	opacity: 0;
+	z-index: 2;
+	&.on-search {
+		.input-field {
+			i {
+				color: $navbar-font-color;
+			}
+		}
+	}
+	.input-field {
+		i {
+			color: lighten($input-border-color, 20%);
+			cursor: pointer;
+		}
+		#s {
+			background-color: $primary-color;
+			color: $navbar-font-color;
+			@include transition(width 300ms ease);
+			position: relative;
+			cursor: pointer;
+			width: 100%;
+			&:focus {
+				cursor: text;
+			}
+		}
+	}
+}
+
+.search-submit {
+	@extend .btn;
+}

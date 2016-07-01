@@ -1,0 +1,170 @@
+#site-navigation {
+	.brand-logo {
+		height: $navbar-height;
+		line-height: 64px;
+		white-space: normal;
+
+		&.custom-logo-link {
+			line-height: 58px;
+		}
+
+		img {
+			vertical-align: middle;
+			max-width: 300px;
+			max-height: 64px;
+			height: auto;
+		}
+	}
+	.side-nav {
+		a {
+			min-height: 64px;
+			height: initial;
+		}
+	}
+
+	.primary-menu {
+		> ul {
+			li.page_item {
+				&.current_page_ancestor, &.current_page_item {
+					background-color: rgba(0, 0, 0, 0.1);
+				}
+				float: left;
+				list-style: none;
+				position: relative;
+
+				&:hover {
+					> ul {
+						display: block;
+					}
+				}
+
+				a {
+					outline: none;
+					width: 100%;
+				}
+			}
+
+			// all depth
+			.children {
+				z-index: 10;
+				min-width: 200px;
+				display: none;
+				position: absolute;
+				background-color: $primary-color;
+
+				li {
+					width: 100%;
+				}
+
+				// depth 2
+				> li {
+					width: 100%;
+					> ul {
+						right: 100%;
+						top: 0;
+						> li {
+							width: 100%;
+
+							// depth 2+
+							ul {
+								li {
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// all depth
+		.sub-menu, .children {
+			min-width: 200px;
+			display: none;
+			position: absolute;
+			background-color: $primary-color;
+		}
+		li {
+			&.current-menu-item, &.current-menu-ancestor {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+			position: relative;
+			//&:hover {
+			//	> ul {
+			//		display: block;
+			//	}
+			//}
+
+			a {
+				outline: none;
+				width: 100%;
+			}
+		}
+
+		// depth 1
+		> li {
+			> ul {
+				right: 0;
+				z-index: 100;
+
+				// depth 2
+				> li {
+					width: 100%;
+					> ul {
+						right: 100%;
+						top: 0;
+						> li {
+							width: 100%;
+
+							// depth 2+
+							ul {
+								li {
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#side-primary-menu {
+		li {
+			&.current-menu-item, .current_page_item {
+				background-color: #ddd;
+			}
+		}
+	}
+}
+
+.material-tooltip {
+	.backdrop {
+		background-color: $primary-color-light;
+	}
+}
+
+@media #{$medium-and-down} {
+	#site-navigation {
+		.brand-logo {
+			height: 50px;
+		}
+		a {
+			.mdi-navigation-menu {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+
+	.side-nav {
+		li {
+			padding: 0 0 0 15px;
+			li {
+				li {
+					padding: 0;
+				}
+			}
+		}
+	}
+}

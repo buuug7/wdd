@@ -1,0 +1,24 @@
+.to-top {
+	a {
+		background-color: $primary-color-light;
+	}
+	i {
+		font-size: 40px;
+	}
+}
+
+#colophon {
+	color: color("blue", "lighten-4");
+
+	.widget-title {
+		color: color("blue", "lighten-4");
+	}
+
+	a {
+		color: $navbar-font-color;
+	}
+
+	.widget-area {
+		margin-top: 40px;
+	}
+}

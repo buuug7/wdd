@@ -1,0 +1,22 @@
+.post-navigation {
+	background-color: #fff;
+
+	.nav-previous {
+		float: left;
+	}
+	.nav-next {
+		float: right;
+	}
+	a {
+		color: $primary-color;
+		i {
+			font-size: 40px;
+		}
+		strong {
+			position: relative;
+			bottom: 10px;
+		}
+	}
+
+
+}

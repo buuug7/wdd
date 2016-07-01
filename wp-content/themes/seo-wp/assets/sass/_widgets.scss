@@ -1,0 +1,165 @@
+// Main Sidebar
+
+.widget-area {
+	h3.widget-title {
+		//padding: 1rem 0.5rem;
+		//border: 1px solid rgba(0, 0, 0, 0.5);
+		position: relative;
+		padding-bottom: 10px;
+
+		&:after {
+			content: '';
+			width: 40px;
+			height: 2px;
+			background-color: $primary-color;
+			position: absolute;
+			margin-top: 20px;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	// Aside
+	aside.widget {
+		margin-bottom: 20px;
+		clear: both;
+
+		* {
+			max-width: 100% !important;
+		}
+
+		> * {
+			&:after {
+				content: '';
+				clear: both;
+				display: table;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	// Search Widget
+
+	.widget_search {
+
+		.screen-reader-text {
+			display: none;
+		}
+		.search-submit {
+			@extend .btn;
+		}
+	}
+
+	// Recent Posts Widget,
+	// Recent Comment Widget,
+	// Archive Widget,
+	// Category Widget,
+	// Meta Widget,
+
+	.widget_recent_entries,
+	.widget_recent_comments,
+	.widget_archive,
+	.widget_categories,
+	.widget_meta,
+	.widget_pages,
+	.widget_rss {
+
+		> ul {
+			> li {
+				padding-top: 10px;
+				padding-bottom: 10px;
+
+				.children {
+					padding-left: 20px;
+
+					> li {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						position: relative;
+
+						&:before {
+							content: ' ';
+							width: 5px;
+							height: 5px;
+							background-color: #333;
+							position: absolute;
+							margin-top: 20px;
+							left: -20px;
+							top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.widget_recent_comments {
+		ul {
+			li {
+				> a {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	&#secondary {
+		.widget_recent_entries,
+		.widget_recent_comments,
+		.widget_archive,
+		.widget_categories,
+		.widget_meta,
+		.widget_pages,
+		.widget_rss {
+			> ul {
+				> li {
+					border-bottom: 1px solid #ddd;
+				}
+			}
+		}
+	}
+
+	.widget_nav_menu {
+		ul.menu {
+			> li {
+
+				a {
+					width: 100%;
+					padding: 10px 0;
+					border-bottom: 1px solid #ddd;
+				}
+
+				.sub-menu {
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+
+	.widget_calendar {
+		table {
+			td {
+				a {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+}
+
+// Tag Cloud Widget
+
+.widget_tag_cloud {
+	.tagcloud {
+		a {
+			@extend .btn;
+			margin: 0 5px 5px 0;
+			max-width: 100%;
+		}
+	}
+}

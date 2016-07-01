@@ -1,0 +1,370 @@
+/*
+Theme Name: Material Lite
+Theme URI: http://www.ghuwad.com/wordpress-themes/material-lite
+Author: Ghuwad, siddhapurahitesh
+Author URI: http://www.ghuwad.com/
+Description: Meterial Lite is material style WordPress template. Meterial Lite uses `Material Design Lite`(http://www.getmdl.io/) package by Google. Its fully compatible with all latest device (desktop, mobile)
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: material-lite
+Tags: one-column, two-columns, right-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-colors, custom-header, flexible-header, sticky-post, threaded-comments
+*/
+img.size-full,
+img.size-large,
+img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+}
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure.wp-caption.alignleft, img.alignleft {
+    margin: 5px 20px 5px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 10px 5px 0;
+}
+figure.wp-caption.alignright, img.alignright {
+    margin: 5px 0 5px 20px;
+}
+.wp-caption.alignright {
+    margin: 5px 0 5px 10px;
+}
+img.aligncenter {
+    margin: 5px auto;
+}
+img.alignnone {
+    margin: 5px 0;
+}
+.wp-caption {
+    background-color: #ccc;
+    padding: 3px;
+    border-radius: 0px 0px 3px 3px;
+}
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption {
+    color: #220e10;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 2px 0;
+    text-align: center;
+}
+div.wp-caption.alignright img[class*="wp-image-"] {
+    float: right;
+}
+div.wp-caption.alignright .wp-caption-text {
+    padding-left: 10px;
+}
+img.wp-smiley, .rsswidget img {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+.wp-caption.alignleft + ul, .wp-caption.alignleft + ol {
+    list-style-position: inside;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+body,h1,h2,h3,h4,h5,h6{
+    font-family: "Microsoft YaHei" !important;
+}
+
+body, html {
+  margin: 0;
+  padding: 0
+}
+
+.gstq .header-bg {
+  background: url(./assets2/images/transparent.jpg);
+  background-size: cover
+}
+
+.gstq .nav-bg {
+  background: transparent
+}
+
+.gstq .mdl-layout__header-row {
+  padding-left: 35px
+}
+
+.gstq .mdl-layout__header-row h3 {
+  font-size: 2rem;
+  font-weight: 700
+}
+
+@media (max-width: 840px) {
+  .gstq .header-logo {
+    height: 80px
+  }
+}
+
+.gstq .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar, .gstq .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
+  overflow: visible
+}
+
+.gstq .mdl-layout__tab-bar-container {
+  height: 64px
+}
+
+.gstq .mdl-layout__tab-bar-container .mdl-layout__tab-bar-button {
+  display: none
+}
+
+.gstq .mdl-layout__tab-bar {
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%
+}
+
+.gstq .mdl-layout__tab-bar .mdl-layout__tab {
+  height: 64px;
+  line-height: 64px;
+  font-size: 1.3rem;
+  font-weight: 700
+}
+
+.gstq .mdl-layout__tab-bar .mdl-layout__tab.is-active:after {
+  background-color: #fff;
+  height: 4px
+}
+
+.gstq .mdl-card .mdl-card__supporting-text > h3:first-child {
+  margin-bottom: 24px
+}
+
+.gstq main .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px
+}
+
+.gstq main .mdl-layout__tab-panel:not(#index) {
+  background-color: #fff
+}
+
+.gstq main section {
+  position: relative;
+  margin-bottom: 48px
+}
+
+.gstq main section.section--center {
+  max-width: 1000px
+}
+
+.gstq main section > header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.gstq main section > header .material-icons {
+  font-size: 3rem
+}
+
+.gstq main section .mdl-card {
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.gstq main section .mdl-card > * {
+  height: auto
+}
+
+.gstq main section .mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px)
+}
+
+.gstq main section .mdl-card .mdl-card__supporting-text h4 {
+  margin-top: 0;
+  margin-bottom: 20px
+}
+
+.gstq main section .mdl-card .mdl-card__actions {
+  margin: 0;
+  padding: 4px 40px;
+  color: inherit
+}
+
+.gstq main section .mdl-card .mdl-card__actions a {
+  font-family: inherit;
+  color: #00bcd4;
+  margin: 0
+}
+
+.gstq main section .mdl-card .mdl-card__actions a:active, .gstq main section .mdl-card .mdl-card__actions a:hover {
+  color: inherit;
+  background-color: transparent
+}
+
+.gstq main section .mdl-card .mdl-card__supporting-text + .mdl-card__actions {
+  border-top: 1px solid rgba(0, 0, 0, .12)
+}
+
+.gstq main section > .section__play-btn {
+  min-height: 200px
+}
+
+.gstq main section > button {
+  position: absolute;
+  z-index: 99;
+  top: 8px;
+  right: 8px
+}
+
+.gstq main section .section__circle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 1;
+  flex-shrink: 1
+}
+
+.gstq main section .section__circle-container > .section__circle-container__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 8px 0
+}
+
+.gstq main section .section__text {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-top: 8px
+}
+
+.gstq main section .section__text h5 {
+  font-size: inherit;
+  margin: 0;
+  margin-bottom: .5em
+}
+
+.gstq main section .section__text a {
+  text-decoration: none
+}
+
+.gstq main section.section--center .section__text:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, .13)
+}
+
+.gstq #features section.section--center {
+  max-width: 620px
+}
+
+.gstq section.section--footer .section__circle--big {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 8px 32px
+}
+
+.gstq .is-small-screen section.section--footer .section__circle--big {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 8px 16px
+}
+
+.gstq section.section--footer {
+  padding: 64px 0;
+  margin: 0 -8px -8px
+}
+
+.gstq #features section {
+  margin-bottom: 72px
+}
+
+#features h5, .gstq #features h4 {
+  margin-bottom: 16px
+}
+
+.gstq .toc {
+  border-left: 4px solid #c1eef4;
+  margin: 24px;
+  padding: 0;
+  padding-left: 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.gstq .toc h4 {
+  font-size: .9rem;
+  margin-top: 0
+}
+
+.gstq .toc a {
+  color: #4dd0e1;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  display: block
+}
+
+.gstq .mdl-menu__container {
+  z-index: 99
+}
