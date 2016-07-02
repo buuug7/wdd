@@ -19,7 +19,6 @@
           <ul class="mdl-mega-footer__link-list">
             <li><a href="#">关于我们</a></li>
             <li><a href="#">免责申明</a></li>
-            <li><a href="#">合作伙伴</a></li>
           </ul>
         </div>
 
@@ -27,9 +26,9 @@
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h1 class="mdl-mega-footer__heading">解决方案</h1>
           <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">企业门户网站解决方案</a></li>
             <li><a href="#">政府企业网站解决方案</a></li>
-            <li><a href="#">网上商城解决方案</a></li>
-            <li><a href="#">微网站以及个人网站解决方案</a></li>
+            <li><a href="#">个人网站解决方案</a></li>
           </ul>
         </div>
 
@@ -38,9 +37,8 @@
           <h1 class="mdl-mega-footer__heading">服务支持</h1>
           <ul class="mdl-mega-footer__link-list">
             <li><a href="#">企业门户网站</a></li>
-            <li><a href="#">政府网站</a></li>
+            <li><a href="#">政府门户网站</a></li>
             <li><a href="#">其他网站</a></li>
-            <li><a href="#">微网站</a></li>
           </ul>
         </div>
 
@@ -58,9 +56,13 @@
       <div class="mdl-mega-footer__bottom-section">
         <div class="mdl-logo">甘肃天奇网络科技有限公司</div>
         <ul class="mdl-mega-footer__link-list">
-          <li><a href="#">版权所有©2016+</a></li>
+
+          <li>
+            <a target="_blank" href="<?php echo esc_url( __( 'http://wordpress.org/', 'material-lite' ) ); ?>" ><?php _e('Powered by WordPress', 'material-lite' ); ?></a>
+        </li>
         </ul>
       </div>
+
     </footer>
     
 <!--    <footer id="colophon" class="mdl-mega-footer" role="contentinfo">

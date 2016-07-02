@@ -110,14 +110,17 @@ img.wp-smiley, .rsswidget img {
     z-index: 100000; /* Above WP toolbar. */
 }
 
+
 body,h1,h2,h3,h4,h5,h6{
     font-family: "Microsoft YaHei" !important;
 }
+
 
 body, html {
   margin: 0;
   padding: 0
 }
+
 
 .gstq .header-bg {
   background: url(./assets2/images/transparent.jpg);
@@ -367,4 +370,8 @@ body, html {
 
 .gstq .mdl-menu__container {
   z-index: 99
+}
+
+.gstq .font-size-16{
+  font-size: 16px !important;
 }

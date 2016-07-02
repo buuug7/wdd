@@ -48,9 +48,3 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
-
-<script type="text/javascript">
-$(function(){
-	alert(1232);
-});
-</script>

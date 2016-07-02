@@ -21,9 +21,9 @@ if ( post_password_required() )
 			<?php
 			$num_comments = get_comments_number();
 			if ( $num_comments > 1 ) {
-				_e('Comments', 'material-lite');
+				_e('评论', 'material-lite');
 			} else {
-				_e('Comment', 'material-lite');
+				_e('评论', 'material-lite');
 			}
 			echo '<button class="mdl-button counter mdl-button--fab" disabled>'.$num_comments.'</button>';
 			?>
@@ -67,15 +67,16 @@ if ( post_password_required() )
 
 	$args = array(
 		'fields' => array(
-			'author' => '<div class="comment-form-author mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '"' . $aria_req . ' /><label class="mdl-textfield__label" for="author">'.__( 'Name', 'material-lite' ).( $req ? ' <span class="required">*</span>' : '' ).'</label></div>',
-			'email' => '<div class="comment-form-email mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '"' . $aria_req . ' /><label class="mdl-textfield__label" for="email">'.__( 'Email', 'material-lite' ).( $req ? ' <span class="required">*</span>' : '' ).'</label></div>',
-			'url' => '<div class="comment-form-url mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" /><label class="mdl-textfield__label" for="author">'.__( 'Website', 'material-lite' ).'</label></div>'
+			'author' => '<div class="comment-form-author mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '"' . $aria_req . ' /><label class="mdl-textfield__label" for="author">'.__( '姓名', 'material-lite' ).( $req ? ' <span class="required">*</span>' : '' ).'</label></div>',
+			'email' => '<div class="comment-form-email mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '"' . $aria_req . ' /><label class="mdl-textfield__label" for="email">'.__( '邮箱', 'material-lite' ).( $req ? ' <span class="required">*</span>' : '' ).'</label></div>',
+			'url' => '<div class="comment-form-url mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" /><label class="mdl-textfield__label" for="author">'.__( '个人网站', 'material-lite' ).'</label></div>'
 		),
-		'comment_field' => '<div class="comment-form-comment mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><textarea class="mdl-textfield__input" id="comment" name="comment" type="text" rows="3"></textarea><label class="mdl-textfield__label" for="comment">'. __( 'Write your comment', 'material-lite' ).'</label></div>',
+		'comment_field' => '<div class="comment-form-comment mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><textarea class="mdl-textfield__input" id="comment" name="comment" type="text" rows="3"></textarea><label class="mdl-textfield__label" for="comment">'. __( '输入你的评论', 'material-lite' ).'</label></div>',
 		'class_submit' => 'hide',
-		'comment_notes_after' => '<p class="form-allowed-tags">' . sprintf(__( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'material-lite'), ' <code>' . allowed_tags() . '</code>' ) . '</p><button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">'.__('Post Comment', 'material-lite').'</button>'
+		/*'comment_notes_after' => '<p class="form-allowed-tags">' . sprintf(__( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'material-lite'), ' <code>' . allowed_tags() . '</code>' ) . '</p><button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">'.__('Post Comment', 'material-lite').'</button>'*/
+		'comment_notes_after' => '<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">'.__('提交评论', 'material-lite').'</button>'
 
 	);
-	comment_form($args);
+	comment_form($args)
 	?>
 </div>
