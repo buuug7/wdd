@@ -49,7 +49,7 @@ function material_lite_list_comments( $comment, $args, $depth ) {
 							array_merge(
 								$args,
 								array(
-									'reply_text' => '<i class="material-icons">reply</i> '.__( 'Reply', 'material-lite' ),
+									'reply_text' => '<i class="material-icons">reply</i> '.__( '回复', 'material-lite' ),
 									'depth'      => $depth,
 									'max_depth'  => $args['max_depth'],
 								)
@@ -90,7 +90,7 @@ function material_lite_meta($opt = array('author', 'date', 'category', 'tag'), $
 		$ret .= '<span class="date"><i class="material-icons">access_time</i> <a href="'.esc_url(get_permalink()).'">'.get_the_date().'</a></span>';
 	}
 	if (in_array('read_more', $opt)) {
-		$ret .= '<span class="read_more"><i class="material-icons">launch</i> <a href="'.esc_url(get_permalink()).'">'.__('Read More', 'material-lite').'</a></span>';
+		$ret .= '<span class="read_more"><i class="material-icons">launch</i> <a href="'.esc_url(get_permalink()).'">'.__('详情', 'material-lite').'</a></span>';
 	}
 	if (in_array('attachment', $opt)) {
 		$metadata = wp_get_attachment_metadata();
